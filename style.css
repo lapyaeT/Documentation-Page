@@ -102,8 +102,7 @@ article p {
       top: 0;
       padding: 0;
       margin: 0;
-      width: 100%;
-      border: solid 2px;
+      max-width: 100%;
       z-index: 1;
     }
     .main-section header {
