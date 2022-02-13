@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #1C1C1C;
+}
+
+#navbar {
+    max-width: 30%;
+    position: fixed;
+}
+
+.title {
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    color: #F3F3F3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+.title strong {
+    color: #B12A2A;
+    font-weight: 700;
+}
+
+.nav-li {
+    list-style: none;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.nav-li a {
+    text-decoration: none;
+    color: #F7F7F7;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+.nav-li a::after {
+    content: "";
+    left: 0;
+    bottom: -0.6rem;
+    height: 2px;
+    width: 0;
+    background-color: #B12A2A;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.nav-li a:hover {
+    color: #B12A2A;
+}
+
+.nav-li a:hover::after{
+    width: 100%;
+}
+
+#main-doc{
+    width: 60%;
+    position: relative;
+    left: 30%;
+    margin-bottom: 3rem;
+}
+
+.main-section header, p, li{
+    color: #F7F7F7;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-section header {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding-left: 1rem;
+}
+
+article p {
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    font-weight: 200;
+    word-spacing: 0.25rem;
+    padding-left: 2rem;
+}
+
+.list {
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    padding-top: 0.5rem;
+    padding-left: 4rem;
+}
+
+@media only screen and (max-width: 815px) {
+    
+    #navbar {
+      background-color: #1C1C1C;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      border: solid 2px;
+      z-index: 1;
+    }
+    .main-section header {
+        font-size: 1.2rem;
+    }
+
+    article p, li {
+        font-size: 0.8rem;
+    }
+
+    #main-doc {
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 300px;
+    }
+}
